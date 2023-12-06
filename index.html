@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web Coding</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+  <!-- this is navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#"><i class="fa-solid fa-cube fa-spin me-2"></i>Web Coding</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link active text-light" aria-current="page" href="#"><i class="fa-solid fa-home"
+                style="padding-right: 6px;"></i>Home</a> <!--this is home-->
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="about.html"><i class="fa-solid fa-circle-info"
+                style="padding-right: 6px;"></i>About</a> <!--this is about link-->
+          </li>
+
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-tools" style="padding-right: 6px;"></i>
+              Web-tools
+            </a>
+            <ul class="dropdown-menu bg-dark change">
+              <li><a class="dropdown-item bg-dark text-light"
+                  href="https://www.w3schools.com/howto/howto_blog_become_frontenddev.asp">Front End Developer</a></li>
+              <li>
+                <hr class="dropdown-divider bg-body-secondary">
+              </li>
+              <li><a class="dropdown-item bg-dark text-light"
+                  href="https://www.simplilearn.com/how-to-become-a-backend-developer-article">Back End Developer</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider bg-body-secondary">
+              </li>
+              <li><a class="dropdown-item text-light bg-dark" href="https://www.w3schools.com/whatis/">Full Stack
+                  Development</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-light" href="contact.html"><i class="fa-solid fa-user"
+                style="padding-right: 6px;"></i>Contact us</a> <!--this is contact link-->
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-search"></i></button>
+          <!--this is search button-->
+        </form>
+        <div class="m-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signinModal">Sign In</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- this is sign in model-->
+
+  <!-- Modal -->
+  <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="signinModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I Agree</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- this is sign up model-->
+
+  <!-- Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Register</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">I Agree</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--this is slider-->
+
+  <div id="carouselExampleInterval" class="carousel slide carousel-fade mt-1" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="web-development 2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 style="position: relative; bottom: 20px;">Welcome to the Web Coding</h2>
+          <p>
+          <h5 style="position: relative; bottom: 20px;">Here you can find all the information about web-development.
+          </h5>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://hivelife.com/wp-content/uploads/2020/07/global-tech-trends-hive-life-banner.jpg"
+          class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="photo-1.jpg" class="d-block w-100" alt="...">
+        <!--https://s7ap1.scene7.com/is/image/cognizant/Codex-6876-Data-Interoperability-banner-1200x500-->
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--this is first cards-->
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 col-lg-6 ">
+        <div class="card shadow" style="width: 20rem; margin: auto auto auto auto;">
+          <img
+            src="https://media.licdn.com/dms/image/D5612AQEmlZ7RaQbtFg/article-cover_image-shrink_720_1280/0/1684304054980?e=2147483647&v=beta&t=1R70_39PpiF05FwPilfehkH3suTeVNBTqrQOOoIH3mk"
+            class="card-img-top shadow" alt="...">
+          <div class="card-body shadow">
+            <h5 class="card-title"><b>Front End Development</b></h5>
+            <p class="card-text"><small class="text-body-secondary"><b style="color: rgb(144, 137, 137);">To become a
+                  Front End Developer you need to learn these skills such as <strong style="color: rgb(60, 151, 187);">
+                    HTML , CSS</strong> and <strong style="color: rgb(60, 151, 187);">JavaScript.</strong> Also these
+                  are
+                  some frameworks for CSS and JavaScript like<strong style="color: rgb(60, 151, 187);"> Bootstrap ,
+                    TailWind , Vue.Js , Angular.Js</strong> and the librarys of JavaScript <strong
+                    style="color: rgb(60, 151, 187);">React.Js </strong> and <strong
+                    style="color: rgb(60, 151, 187);">JQuery</strong>.</b></small> </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- this is second card-->
+      <div class="col-md-12 col-lg-6 ">
+        <div class="card shadow" style="width: 20rem; margin: auto auto auto auto; position: relative; bottom: 3px;">
+          <img
+            src="https://static.wixstatic.com/media/90b6f2_4241a89a8e94417fa5f88101907da6ad~mv2.png/v1/fill/w_640,h_360,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/90b6f2_4241a89a8e94417fa5f88101907da6ad~mv2.png"
+            class="card-img-top shadow" alt="...">
+          <div class="card-body shadow">
+            <h5 class="card-title"><b>Back End Development</b></h5>
+            <p class="card-text"><small class="text-body-secondary"><b style="color: rgb(144, 137, 137);">To become a
+                  Back End Developer you need to learn one of these skills such as <strong
+                    style="color: rgb(60, 151, 187);">Node.Js , Php , Python , Java , C# </strong>etc. Also these are
+                  some frameworks for the skills <strong style="color: rgb(60, 151, 187);">Express.Js , Laravel , Django
+                    , Spring , Dot NET</strong> for database <strong style="color: rgb(60, 151, 187);">My SQL</strong>
+                  and <strong style="color: rgb(60, 151, 187);">MongoDB</strong> are the best.</b></small> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- this is frontend explaintion-->
+
+  <div class="col-md-12 mt-5 shadow">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+
+        <h3 class="mb-0">What is Front End Development</h3>
+        <div>
+          .
+        </div>
+        <p class="card-text mb-auto">Frontend development, also known as client-side development, refers to the process
+          of creating the user interface (UI) and user experience (UX) of a website or web application. Frontend
+          developers are responsible for designing and implementing the visual elements that users interact with on a
+          website, including layout, navigation, and overall aesthetics.</p>
+        <div>
+          <p class="card-text mb-auto mt-3">
+            Key components of frontend development include:</p>
+        </div>
+        <div class="card-text mb-auto mt-3">
+          <ol class="card-text mb-auto" type="1">
+            <li>
+              <strong style="color: rgb(60, 151, 187);">(Hypertext Markup Language):</strong> It provides the structure
+              of a webpage by defining the various elements such as headings, paragraphs, images, and links.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);">CSS (Cascading Style Sheets):</strong> CSS is used to style the
+              HTML elements and control the layout of the webpage. It includes properties for colors, fonts, spacing,
+              and more.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);"> JavaScript:</strong> This programming language is used to add
+              interactivity and dynamic features to a webpage. JavaScript allows developers to create responsive and
+              engaging user interfaces, handle user input, and communicate with backend services.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);"> Responsive Design:</strong> Frontend developers need to ensure
+              that the website or application is accessible and usable across different devices and screen sizes.
+              Responsive design techniques, often involving CSS media queries, are used for this purpose.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);"> Frameworks and Libraries:</strong> Frontend developers often
+              leverage frameworks and libraries to streamline the development process. Examples include React, Angular,
+              and Vue.js for building user interfaces.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);"> Browser Developer Tools:</strong> Frontend developers use
+              browser developer tools to debug and optimize their code. These tools allow them to inspect and manipulate
+              the HTML, CSS, and JavaScript of a webpage in real-time.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);"> Version Control/Git:</strong> Frontend developers often work
+              collaboratively, and version control systems like Git help them manage and track changes to the codebase.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);"> Build Tools and Task Runners:</strong> Tools like Webpack,
+              Gulp, or Grunt are used to automate tasks such as bundling and minifying code, optimizing images, and
+              managing dependencies.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--this is backend explaination-->
+
+  <div class="col-md-12 mt-3 shadow">
+    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+      <div class="col p-4 d-flex flex-column position-static">
+
+        <h3 class="mb-0">What is Back End Development</h3>
+        <div>
+          .
+        </div>
+        <p class="card-text mb-auto">Backend development refers to the server-side of web development, where the logic
+          and functionality that power the frontend are implemented. While the frontend is concerned with what users
+          interact with directly, the backend deals with the server, database, and application logic that enable the
+          frontend to function. Backend development is responsible for managing and processing data, ensuring security,
+          and handling business logic.</p>
+        <div>
+          <p class="card-text mb-auto mt-3">
+            Key components of backend development include:</p>
+        </div>
+        <div class="card-text mb-auto mt-3">
+          <ol class="card-text mb-auto" type="1">
+            <li>
+              <strong style="color: rgb(60, 151, 187);">Server-side Programming Languages:</strong> Backend developers
+              use languages such as Python, Ruby, PHP, Java, Node.js (JavaScript), and others to write the server-side
+              code. These languages are responsible for processing requests from the frontend, interacting with
+              databases, and generating dynamic content.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);">Web Servers: </strong> Web servers, such as Apache or Nginx,
+              handle incoming requests from clients (browsers) and route them to the appropriate backend code.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);">Databases: </strong>Backend developers work with databases to
+              store, retrieve, and manage data. Common types of databases include relational databases like MySQL and
+              PostgreSQL, as well as NoSQL databases like MongoDB.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);">APIs (Application Programming Interfaces):</strong> APIs enable
+              communication between different software applications. Backend developers often create APIs that allow the
+              frontend to interact with the server and access data or perform specific functions.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);"> Frameworks:</strong> Backend development frameworks, such as
+              Django (Python), Ruby on Rails (Ruby), Express (Node.js), and Laravel (PHP), provide pre-built structures
+              and tools to streamline development tasks and ensure code organization.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);">Authentication and Authorization: </strong> Backend developers
+              implement security measures, including user authentication and authorization, to control access to
+              sensitive data and functionality.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);">Server-Side Rendering (SSR) and RESTful APIs: </strong> SSR is a
+              technique where the server generates HTML for the frontend, enhancing performance and SEO. RESTful APIs
+              (Representational State Transfer) are commonly used for communication between the frontend and backend,
+              allowing the exchange of data in a standardized way.
+            </li>
+            <li class="mt-2">
+              <strong style="color: rgb(60, 151, 187);">Scalability and Performance Optimization:</strong> Ensuring that
+              the backend can handle a large number of users and optimizing the performance of the server-side code are
+              essential aspects of backend development.
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--this is circle img-->
+
+  <div class="row mt-5 bg-dark shadow" style="text-align: center;">
+    <div class="col-md-12 col-lg-4 ">
+      <img class="mt-3" style="border-radius: 60%;" width="140" height="140"
+        src="https://nextbridgeinstitute.com/wp-content/uploads/2021/03/How-to-Master-Mern-Stack-Development.jpg"
+        alt="">
+      <h2 class="fw-normal text-light mt-3"><b>MERN Stack</b></h2>
+      <p class="text-light">MERN stack stands for MongoDB , Express.js ,</p>
+      <p class="text-light" style="position: relative; left: 2px; bottom: 14px;">React.Js and Node.Js</p>
+      <p><a class="btn btn-secondary" href="https://www.javatpoint.com/mern-stack">View details »</a></p>
+    </div><!-- /.col-lg-4 -->
+
+    <div class="col-md-12 col-lg-4 ">
+      <img class="mt-3" style="border-radius: 60%;" width="140" height="140"
+        src="https://www.appstudio.ca/blog/wp-content/uploads/2021/12/Mean-Stack-Development-1024x740.jpg" alt="">
+      <h2 class="fw-normal text-light mt-3"><b>MEAN Stack</b></h2>
+      <p class="text-light">MEAN stack stands for MongoDB , Express.js ,</p>
+      <p class="text-light" style="position: relative; left: 2px; bottom: 14px;">Angular.Js and Node.Js</p>
+      </p>
+      <p><a class="btn btn-secondary" href="https://www.javatpoint.com/mean-stack-tutorial">View details »</a></p>
+    </div><!-- /.col-lg-4 -->
+
+    <div class="col-md-12 col-lg-4 ">
+      <img class="mt-3" style="border-radius: 60%;" width="140" height="140"
+        src="https://i.ytimg.com/vi/qbbsKZv7sJA/hqdefault.jpg" alt="">
+      <h2 class="fw-normal text-light mt-3"><b>MEVN Stack</b></h2>
+      <p class="text-light">MEVN stack stands for MongoDB , Express.js ,</p>
+      <p class="text-light" style="position: relative; left: 2px; bottom: 14px;">Vue.js and Node.js </p>
+
+      <p><a class="btn btn-secondary" href="https://techvify-software.com/what-is-mevn-stack/">View details »</a></p>
+    </div><!-- /.col-lg-4 -->
+  </div>
+
+  <!--this is divide section-->
+
+  <!--this is footer-->
+
+  <div class="container bg-dark" style="position: relative; top: 20px; ">
+    <footer class="py-3 my-4 bg-dark">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3 bg-dark text-light ">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-light">About</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-light">Contact Us</a></li>
+      </ul>
+      <p class="text-center text-light"><b>Created by the<a href="https://in.linkedin.com/in/kuldeep-sisodiya"> Kuldeep
+            Singh Sisodiya</a> . © 2023</b></p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(230, 238, 245)
+}
+
+li:hover {
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+}
